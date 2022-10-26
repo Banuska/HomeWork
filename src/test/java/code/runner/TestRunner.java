@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
     @CucumberOptions(
             features = "src/test/resources",  //This is to connect feature files with runner class
             //We need to copy path from content root
-            glue = "code/stepsDefinitions", //This is to connect steps with runner class
+            glue = "code/stepsDefinition", //This is to connect steps with runner class
             //We need to copy path from source root
-            tags= "@Regression",
+            tags= "",
             dryRun = false, //This is to get undefined steps without opening up browser
             plugin={
                     "pretty", //This is to have more understandable console logs.
