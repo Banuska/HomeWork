@@ -26,7 +26,7 @@ public class renasPracticeInsurancePractice_Steps extends BrowserUtils {
     @When("The user wants to click Insurance icon")
     public void the_user_wants_to_click_insurance_icon() {
 
-        renasTechHome.setInsuranceButton();
+       renasTechHome.setInsuranceButton();
     }
     @Then("The user wants to verify that get quote page is visible")
     public void the_user_wants_to_verify_that_get_quote_page_is_visible() {

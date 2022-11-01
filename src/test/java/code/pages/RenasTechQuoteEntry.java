@@ -46,9 +46,9 @@ public class RenasTechQuoteEntry extends BrowserUtils {
     private  WebElement coverageDate;
     @FindBy(id="next-step4")
     private  WebElement nextButtonCoverage;
-    @FindBy(xpath = "//button[@id='mat-button-toggle-7-button']/span")
+    @FindBy(id = "mat-button-toggle-7-button")
     private  WebElement winterTireYes;
-    @FindBy(xpath = "//button[@id='mat-button-toggle-10-button']/span")
+    @FindBy (id = "mat-button-toggle-10-button")
     private WebElement TdSavingNo;
     @FindBy(id = "next-step5")
     private WebElement nextSavingDiscount;
@@ -91,6 +91,7 @@ public class RenasTechQuoteEntry extends BrowserUtils {
     }
 
     public void setVehicleModelBox() {
+        setWaitTime();
        vehicleModelBox.click();
     }
 
@@ -142,10 +143,12 @@ public class RenasTechQuoteEntry extends BrowserUtils {
     }
 
     public void setWinterTireYes() {
+        setWaitTime();
         winterTireYes.click();
     }
 
     public void setTdSavingNo() {
+
         TdSavingNo.click();
     }
 
@@ -154,6 +157,7 @@ public class RenasTechQuoteEntry extends BrowserUtils {
     }
 
     public void setDrivingLicense(String DrivingLicense) {
+        setWaitTime();
         drivingLicense.sendKeys(DrivingLicense);
     }
 

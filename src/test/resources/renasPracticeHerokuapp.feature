@@ -5,7 +5,7 @@ Feature: Insurance  Get Quote Functional test
     When  The user wants to click Insurance icon
     Then  The user wants to verify that get quote page is visible
     Then   The user wants to click Get a Quote button
-
+@Smoke
   Scenario:Verify that user get Quote
     Then The user wants to verify that Get Quote button navigating to vehicle information
     And The user wants to  select vehicle year from drop down menu
